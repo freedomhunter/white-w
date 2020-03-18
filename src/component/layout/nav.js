@@ -1,6 +1,8 @@
-const Nav = () => {
+import React from 'react';
+
+const Nav = (props) => {
     return (
-        <div class="super_container">
+        <div className="super_container">
             <header className="header">
                 <div className="header_content d-flex flex-row align-items-center justify-content-start">
 
@@ -254,7 +256,7 @@ const Nav = () => {
                     <div className="cart_price">$39.99 (1)</div>
                 </div>
             </div>
-
+            {props.children}
         </div>
     )
 }

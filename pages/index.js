@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Nav from '../src/component/layout/nav'
+import Home from '../src/component/home.js/home'
 
-const Home = () => (
-  <div>
-      <Nav/>
-  </div>
+const Base = () => (
+  <Nav>
+      <Home />
+  </Nav>
 )
 
-export default Home
+export default Base;
